@@ -1,0 +1,15 @@
+services:
+  app:
+    build: .
+    image: docker-nextjs-dev
+    container_name: nextjs-dev
+    command: npm run dev
+    ports:
+      - 3000:3000
+    volumes:
+      - ./app:/code/app
+      - ./components:/code/components
+      - ./models:/code/models
+      - ./public:/code/public
+      - ./styles:/code/styles
+      - ./utils:/code/utils
