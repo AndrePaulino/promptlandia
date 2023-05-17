@@ -1,3 +1,4 @@
+import Nav from "@components/Nav";
 import "@styles/globals.css";
 
 export const metadata = {
@@ -8,13 +9,16 @@ export const metadata = {
 
 const RootLayout = ({ children }) => {
 	return (
-		<html lang="pt_br">
+		<html lang="pt-br">
 			<body>
 				<div className="main">
 					<div className="gradient" />
 				</div>
 
-				<main className="app">{children}</main>
+				<main className="app">
+					<Nav />
+					{children}
+				</main>
 			</body>
 		</html>
 	);
