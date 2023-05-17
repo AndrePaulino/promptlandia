@@ -6,18 +6,18 @@ import { useEffect, useState } from "react";
 import { signIn, signOut, useSession, getProviders } from "next-auth/react";
 
 const Nav = () => {
-	const isUserLoggedIn = true;
+	const { data: session } = useSession();
 	const [providers, setProviders] = useState(null);
 	const [toggleDropdown, settoggleDropdown] = useState(false);
 
 	useEffect(() => {
-		const setProviders = async () => {
+		const setUpProviders = async () => {
 			const response = await getProviders();
 
 			setProviders(response);
 		};
 
-		setProviders();
+		setUpProviders();
 	}, []);
 
 	return (
@@ -35,7 +35,7 @@ const Nav = () => {
 
 			{/* Desktop Navigation */}
 			<div className="sm:flex hidden">
-				{isUserLoggedIn ? (
+				{session?.user ? (
 					<div className="flex gap-3 md:gap-5">
 						<Link className="black_btn" href="/create-prompt">
 							Criar Post
@@ -53,7 +53,7 @@ const Nav = () => {
 								alt="foto de perfil"
 								className="rounded-full"
 								height={37}
-								src="/assets/images/logo.svg"
+								src={session?.user.image}
 								width={37}
 							/>
 						</Link>
@@ -61,7 +61,7 @@ const Nav = () => {
 				) : (
 					<>
 						{providers &&
-							Object.values(providers).map((provider) => {
+							Object.values(providers).map((provider) => (
 								<button
 									className="black_btn"
 									key={provider.name}
@@ -69,22 +69,21 @@ const Nav = () => {
 									type="button"
 								>
 									Entrar
-								</button>;
-							})}
+								</button>
+							))}
 					</>
 				)}
 			</div>
-
 			{/* Mobile Navigation */}
 			<div className="sm:hidden flex relative">
-				{isUserLoggedIn ? (
+				{session?.user ? (
 					<div className="flex">
 						<Image
 							alt="foto de perfil"
 							className="rounded-full"
 							height={37}
 							onClick={() => settoggleDropdown((prev) => !prev)}
-							src="/assets/images/logo.svg"
+							src={session?.user.image}
 							width={37}
 						/>
 
@@ -120,7 +119,7 @@ const Nav = () => {
 				) : (
 					<>
 						{providers &&
-							Object.values(providers).map((provider) => {
+							Object.values(providers).map((provider) => (
 								<button
 									className="black_btn"
 									key={provider.name}
@@ -128,8 +127,8 @@ const Nav = () => {
 									type="button"
 								>
 									Entrar
-								</button>;
-							})}
+								</button>
+							))}
 					</>
 				)}
 			</div>
