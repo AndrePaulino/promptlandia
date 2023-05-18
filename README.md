@@ -15,6 +15,10 @@ Promptlândia é uma ferramenta de Prompts de IA de código aberto, permitindo q
 
 <br>
 
+<p align="center">
+  <img alt="promptlandia preview" src="./.github/promptlandia_preview.png" width="100%">
+</p>
+
 ## 🚀 Tecnologias
 <img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white"/>
 <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"/>
