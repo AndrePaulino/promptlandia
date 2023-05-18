@@ -6,11 +6,15 @@ import { useSession } from "next-auth/react";
 import Form from "@components/Form";
 
 const CreatePrompt = () => {
-	const [submitting, setsubmitting] = useState(false);
+	const router = useRouter();
+	const { data: session } = useSession();
+
+	const [submitting, setSubmitting] = useState(false);
 	const [post, setPost] = useState({ prompt: "", tag: "" });
+
 	const createPrompt = async (event) => {
 		event.preventDefault();
-		setsubmitting(true);
+		setSubmitting(true);
 		try {
 			const response = await fetch("api/prompt/new", {
 				method: "POST",
@@ -21,7 +25,7 @@ const CreatePrompt = () => {
 				}),
 			});
 
-			if (response.ok) Router.push("/");
+			if (response.ok) router.push("/");
 		} catch (error) {
 			console.log(
 				"⛔ ~ file: page.jsx:17 ~ createPrompt ~ error:",
