@@ -6,6 +6,9 @@ export const metadata = {
 	title: "Promptlândia",
 	description: "Descubra & Compartilhe Prompts de IA",
 	charset: "UTF-8",
+	icons: {
+		icon: "assets/images/logo.svg",
+	},
 };
 
 const RootLayout = ({ children }) => {
