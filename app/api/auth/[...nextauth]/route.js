@@ -37,7 +37,7 @@ const handler = NextAuth({
 
 				return true;
 			} catch (error) {
-				console.log(error);
+				console.log("⛔ ~ file: route.js:41 ~ signIn ~ error:", error);
 				return false;
 			}
 		},
