@@ -1,6 +1,6 @@
-# Promptopolis - Um aplicativo Next.js13 Full-Stack
+# Promptlândia - Um aplicativo Next.js13 Full-Stack
 
-Promptopolis é uma ferramenta de Prompts de IA de código aberto, permitindo que os usuários descubram, criem e compartilhem prompts criativos. É desenvolvido usando **Next.js** para frontend e back-end, e utiliza o **MongoDB** como banco de dados. O sistema de autenticação é implementado usando **NextAuth.js**. Este projeto foi desenvolvido com o ensino e orientação de [JavaScript Mastery](https://www.jsmastery.pro/).
+Promptlândia é uma ferramenta de Prompts de IA de código aberto, permitindo que os usuários descubram, criem e compartilhem prompts criativos. É desenvolvido usando **Next.js** para frontend e back-end, e utiliza o **MongoDB** como banco de dados. O sistema de autenticação é implementado usando **NextAuth.js**. Este projeto foi desenvolvido com o ensino e orientação de [JavaScript Mastery](https://www.jsmastery.pro/).
 
 <p align="center">
   <a href="#instalação">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -10,7 +10,7 @@ Promptopolis é uma ferramenta de Prompts de IA de código aberto, permitindo qu
 
 <p align="center">
   <img alt="Por JSMastery" src="https://img.shields.io/static/v1?label=Original&message=JSMastery&color=white&labelColor=8257E5">
-  <img alt="License" src="https://img.shields.io/github/license/andrepaulino/promptopolis?label=License">
+  <img alt="License" src="https://img.shields.io/github/license/andrepaulino/promptlandia?label=License">
 </p>
 
 <br>
@@ -26,7 +26,7 @@ Promptopolis é uma ferramenta de Prompts de IA de código aberto, permitindo qu
 
 ## 🖥️  Instalação
 
-Para rodar localmente Promptopolis existem duas opções:
+Para rodar localmente Promptlândia existem duas opções:
 
 * Instalar em sua máquina.
 * Rodar um container a partir docker-compose incluso.
@@ -34,7 +34,7 @@ Para rodar localmente Promptopolis existem duas opções:
 1. Clone o repositório:
 
 ``` bash
-git clone https://github.com/AndrePaulino/promptopolis
+git clone https://github.com/AndrePaulino/promptlandia
 ```
 
 2. Adicione as variáveis de ambiente adequadas em seu .env
@@ -42,7 +42,7 @@ git clone https://github.com/AndrePaulino/promptopolis
 3. Navegue até o diretório do projeto:
 
 ``` bash
-cd promptopolis
+cd promptlandia
 ```
 
 Para instalar em sua máquina: (tenha [Node](https://nodejs.org/) instalado).
@@ -87,7 +87,7 @@ Do Next.js aprendidas com esse projeto.
 
 ## 📦 Dependências
 
-Promptopia tem as seguintes dependências:
+Promptlândia tem as seguintes dependências:
 
 * Next.js: O framework utilizado para a construção do frontend e backend do aplicativo.
 * MongoDB: Um banco de dados NoSQL usado para armazenamento e gerenciamento de dados.

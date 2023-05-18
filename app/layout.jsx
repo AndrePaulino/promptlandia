@@ -3,7 +3,7 @@ import Nav from "@components/Nav";
 import Provider from "@components/Provider";
 
 export const metadata = {
-	title: "Promptopolis",
+	title: "Promptlândia",
 	description: "Descubra & Compartilhe Prompts de IA",
 	charset: "UTF-8",
 };
