@@ -1,34 +1,100 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Promptopolis - Um aplicativo Next.js13 Full-Stack
 
-## Getting Started
+Promptopolis é uma ferramenta de Prompts de IA de código aberto, permitindo que os usuários descubram, criem e compartilhem prompts criativos. É desenvolvido usando **Next.js** para frontend e back-end, e utiliza o **MongoDB** como banco de dados. O sistema de autenticação é implementado usando **NextAuth.js**. Este projeto foi desenvolvido com o ensino e orientação de [JavaScript Mastery](https://www.jsmastery.pro/).
 
-First, run the development server:
+<p align="center">
+  <a href="#instalação">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#características">Características</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#dependências">Dependências</a>&nbsp;&nbsp;&nbsp;
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+<p align="center">
+  <img alt="Por JSMastery" src="https://img.shields.io/static/v1?label=Original&message=JSMastery&color=white&labelColor=8257E5">
+  <img alt="License" src="https://img.shields.io/github/license/andrepaulino/promptopolis?label=License">
+</p>
+
+<br>
+
+## 🚀 Tecnologias
+<img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white"/>
+<img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"/>
+<img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"/>
+<img src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white"/>
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
+
+<br>
+
+## 🖥️  Instalação
+
+Para rodar localmente Promptopolis existem duas opções:
+
+* Instalar em sua máquina.
+* Rodar um container a partir docker-compose incluso.
+
+1. Clone o repositório:
+
+``` bash
+git clone https://github.com/AndrePaulino/promptopolis
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Adicione as variáveis de ambiente adequadas em seu .env
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+3. Navegue até o diretório do projeto:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+``` bash
+cd promptopolis
+```
 
-## Learn More
+Para instalar em sua máquina: (tenha [Node](https://nodejs.org/) instalado).
 
-To learn more about Next.js, take a look at the following resources:
+1. Instale as dependências:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+``` bash
+npm install
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Rode o servidor de desenvolvimento:
 
-## Deploy on Vercel
+``` bash
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Para rodar o container: (tenha [Docker](https://www.docker.com/) instalado).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Construa a imagem e rode o container:
+
+``` bash
+docker compose up --build
+```
+
+<br>
+
+## 💫 Características
+Do Next.js aprendidas com esse projeto.
+
+* Next.js 13 Estrutura do diretório app/
+* Next.js 13 Componentes de Cliente vs Componentes de Servidor
+* Next.js 13 Roteador baseado em arquivos (rotas dinâmicas e aninhadas)
+* Next.js 13 Arquivos especiais: page, layout, loading, e error
+* Next.js 13 Serverless Route Handlers (Next API, Full Stack Apps)
+* Next.js 13 Metadata e Otimização para Mecanismos de Busca (SEO)
+* Três formas de buscar dados em Next.js:
+  * Renderização no Servidor (SSR)
+  * Geração de Site Estático (SSG)
+  * Regeneração Estática Incremental (ISR)
+
+<br>
+
+## 📦 Dependências
+
+Promptopia tem as seguintes dependências:
+
+* Next.js: O framework utilizado para a construção do frontend e backend do aplicativo.
+* MongoDB: Um banco de dados NoSQL usado para armazenamento e gerenciamento de dados.
+* NextAuth.js: Uma biblioteca de autenticação para aplicativos Next.js.
+
+<br>
+
+<p align="center"><b>
+Se gostou 🌟 - Por André Paulino {🎧}
+</b></p>
